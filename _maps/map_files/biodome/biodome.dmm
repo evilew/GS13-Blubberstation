@@ -1125,7 +1125,6 @@
 /turf/open/floor/wood,
 /area/station/biodome/aft)
 "arh" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
@@ -16136,7 +16135,6 @@
 /turf/open/floor/plating/airless,
 /area/station/solars/starboard/fore)
 "fiC" = (
-/obj/structure/cable,
 /obj/machinery/space_heater,
 /obj/effect/turf_decal/bot_white,
 /obj/machinery/airalarm/directional/north,
@@ -28089,6 +28087,7 @@
 	},
 /obj/item/storage/box/lights/tubes,
 /obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
 /turf/open/floor/iron/checker,
 /area/station/commons/storage/emergency)
 "jfc" = (
@@ -47935,6 +47934,7 @@
 "pil" = (
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/disposalpipe/segment,
+/obj/structure/cable,
 /turf/open/floor/wood/large,
 /area/station/commons/storage/primary)
 "piS" = (
@@ -60692,6 +60692,17 @@
 	},
 /turf/open/misc/asteroid,
 /area/station/cargo/miningdock)
+"tmm" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/yellow/line,
+/obj/structure/disposalpipe/junction/yjunction,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/aft)
 "tmp" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 4;
@@ -70888,8 +70899,10 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/disposalpipe/junction/yjunction,
 /obj/effect/turf_decal/trimline/yellow/line,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/aft)
 "wEY" = (
@@ -178461,7 +178474,7 @@ fQs
 pEf
 jpN
 lnK
-fWN
+tmm
 lBt
 rKw
 eZE
