@@ -69744,6 +69744,15 @@
 	},
 /turf/open/floor/iron/textured,
 /area/station/hallway/primary/fore)
+"koE" = (
+/obj/structure/cable,
+/obj/structure/lattice/catwalk,
+/obj/machinery/power/solar{
+	id = "aftport";
+	name = "Aft-Port Solar Array"
+	},
+/turf/open/space/openspace,
+/area/station/solars/port/aft)
 "koF" = (
 /obj/structure/hedge,
 /obj/effect/turf_decal/stripes/line{
@@ -92789,6 +92798,14 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/central)
+"nQK" = (
+/obj/structure/cable,
+/obj/machinery/power/solar{
+	id = "aftport";
+	name = "Aft-Port Solar Array"
+	},
+/turf/open/floor/iron/solarpanel/airless,
+/area/station/solars/port/aft)
 "nQO" = (
 /obj/effect/turf_decal/trimline/blue/corner,
 /obj/effect/turf_decal/trimline/blue/line{
@@ -243189,9 +243206,9 @@ txW
 pCa
 txW
 txW
-pMb
+nQK
 ccy
-pMb
+nQK
 txW
 txW
 pCa
@@ -243699,17 +243716,17 @@ txW
 txW
 txW
 txW
-eBg
-ccy
-eBg
-pCa
 pMb
 ccy
 pMb
 pCa
-eBg
+nQK
 ccy
-eBg
+nQK
+pCa
+pMb
+ccy
+pMb
 txW
 lGA
 txW
@@ -244213,17 +244230,17 @@ txW
 txW
 txW
 txW
-eBg
-ccy
-eBg
-txW
 pMb
 ccy
 pMb
 txW
-eBg
+nQK
 ccy
-eBg
+nQK
+txW
+pMb
+ccy
+pMb
 txW
 txW
 txW
@@ -245498,17 +245515,17 @@ txW
 txW
 rQU
 txW
-pMb
+nQK
 ccy
-pMb
+nQK
 txW
 txW
 uri
 txW
 txW
-pMb
+nQK
 ccy
-pMb
+nQK
 txW
 txW
 lGA
@@ -246012,17 +246029,17 @@ txW
 txW
 txW
 pCa
-pMb
+nQK
 ccy
-pMb
-pCa
-eBg
-ccy
-eBg
+nQK
 pCa
 pMb
 ccy
 pMb
+pCa
+nQK
+ccy
+nQK
 pCa
 lGA
 txW
@@ -246526,17 +246543,17 @@ pCa
 pCa
 lGA
 txW
-pMb
+nQK
 ccy
-pMb
-txW
-eBg
-ccy
-eBg
+nQK
 txW
 pMb
 ccy
 pMb
+txW
+nQK
+koE
+nQK
 txW
 lGA
 txW
