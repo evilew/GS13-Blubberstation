@@ -124,6 +124,8 @@
 				/obj/item/reagent_containers/cup/beaker/blueberry_juice = 99,
 				/obj/item/reagent_containers/cup/beaker/cornoil = 99,
 				/obj/item/reagent_containers/cup/beaker/flatulose = 99,
+				/obj/item/seeds/lipoplant = 99,
+				/obj/item/food/grown/lipofruit = 99,
 				)
 
 	refill_canister = /obj/item/vending_refill/mealdor
@@ -146,7 +148,7 @@
 				/obj/item/sign/flag/gato = 10,
 				/obj/item/toy/cards/deck/gato = 5,
 				/obj/item/bedsheet/gato = 3,
-				/obj/item/clothing/under/color/dual_tone/centcom/civilian = 5,
+				/obj/item/clothing/under/dual_tone/centcom/civilian = 5,
 				)
 
 	refill_canister = /obj/item/vending_refill/gato_merch
