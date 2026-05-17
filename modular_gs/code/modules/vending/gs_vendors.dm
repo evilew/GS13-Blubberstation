@@ -130,6 +130,36 @@
 
 	refill_canister = /obj/item/vending_refill/mealdor
 
+/obj/machinery/vending/fatty_items/syndicate
+	name = "Waistline Sabotager Vendor"
+	desc = "A vendor packed to the brim with all sorts of waistline-widening tools and things."
+	icon = 'modular_gs/icons/obj/vending.dmi'
+	icon_state = "fattywank"
+	product_slogans = "Fatass."
+	vend_reply = "Pervert."
+	products = list(
+				/obj/item/melee/curator_whip/fattening = 2,
+				/obj/item/melee/curator_whip/permafattening = 1,
+				/obj/item/gavelhammer/fattening = 2,
+				/obj/item/gavelhammer/permafattening = 1,
+				/obj/item/gun/energy/fatoray/cannon = 1,
+				/obj/item/gun/energy/fatoray = 2,
+				/obj/item/gun/energy/laser/alter_ray/gainrate = 1,
+				/obj/item/gun/energy/laser/alter_ray/noloss = 1,
+				/obj/item/food/burger/greaseburger = 10,
+				/obj/item/clothing/neck/human_petcollar/calorite = 5,
+				/obj/item/clothing/neck/human_petcollar/locked/calorite = 5,
+				/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_receiver = 2,
+				/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter = 2,
+				/obj/item/slimepotion/weightratepotions = 1,
+				/obj/item/stack/sheet/mineral/calorite/ten = 3,
+				/obj/item/reagent_containers/cup/beaker/galbanic = 1,
+				/obj/item/reagent_containers/cup/beaker/lipoifier = 2,
+				/obj/item/reagent_containers/cup/beaker/micro_calorite = 1,
+				/obj/item/dnainjector/fatfang = 2
+				)
+
+	refill_canister = /obj/item/vending_refill/mealdor
 
 //gato merch vendor
 /obj/machinery/vending/gato_merch
