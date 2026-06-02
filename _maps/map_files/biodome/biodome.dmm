@@ -26979,9 +26979,6 @@
 /obj/effect/mapping_helpers/apc/cell_10k,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/station/tcommsat/server)
-"jGk" = (
-/turf/open/space/basic,
-/area/station/maintenance/port/upper)
 "jGm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -38008,7 +38005,7 @@
 /area/station/engineering/engine_smes)
 "nms" = (
 /obj/effect/spawner/random/structure/billboard/nanotrasen,
-/turf/open/floor/fakespace,
+/turf/open/floor/plating,
 /area/station/maintenance/port/upper)
 "nmy" = (
 /obj/structure/lattice,
@@ -61743,9 +61740,6 @@
 	},
 /turf/open/floor/grass,
 /area/station/biodome/aft)
-"vqW" = (
-/turf/open/misc/asteroid,
-/area/station/asteroid)
 "vrg" = (
 /obj/effect/spawner/random/structure/closet_empty/crate,
 /obj/effect/spawner/random/entertainment/money,
@@ -67336,7 +67330,7 @@
 /area/station/engineering/atmos)
 "xip" = (
 /obj/structure/billboard/gato,
-/turf/open/floor/fakespace,
+/turf/open/floor/plating,
 /area/station/maintenance/port/upper)
 "xit" = (
 /obj/machinery/atmospherics/pipe/bridge_pipe/scrubbers/visible,
@@ -69836,7 +69830,7 @@
 "xWZ" = (
 /obj/item/pickaxe/rusted,
 /turf/open/misc/asteroid,
-/area/station/asteroid)
+/area/station/maintenance/port/upper)
 "xXb" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/spawner/random/structure/grille,
@@ -160387,8 +160381,8 @@ msg
 lRJ
 hNy
 hNy
-vqW
-vqW
+hNy
+hNy
 mAu
 hNy
 hNy
@@ -160644,7 +160638,7 @@ lRJ
 lRJ
 hNy
 hNy
-jGk
+bXl
 nms
 ndW
 hNy
@@ -160900,9 +160894,9 @@ wkO
 aEe
 lRJ
 hNy
-vqW
+dwf
 bXl
-bXl
+pxU
 pxU
 bXl
 hNy
@@ -161159,7 +161153,7 @@ lRJ
 hNy
 xWZ
 bXl
-bXl
+pxU
 ndW
 bXl
 bXl
@@ -161673,7 +161667,7 @@ hNy
 dwf
 bXl
 bXl
-bXl
+pxU
 pxU
 bXl
 bXl
@@ -161930,7 +161924,7 @@ hNy
 dwf
 bXl
 bXl
-bXl
+pxU
 ndW
 bXl
 bXl

@@ -155,7 +155,7 @@ GLOBAL_DATUM(event_perk_tgui_holder, /datum/event_perk)
 			for (var/item in selected_perk.items)
 				var/obj/item/current_item = item
 				var/item_name = current_item::name
-				var/item_amount = items[item]
+				var/item_amount = selected_perk.items[item]
 				var/list/list_entry = list(
 					"name" = item_name, 
 					"amount" = item_amount

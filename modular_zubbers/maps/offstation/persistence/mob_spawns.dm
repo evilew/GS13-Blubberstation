@@ -151,10 +151,10 @@
 
 /datum/outfit/persistence/prisoner
 	name = "Persistence Syndicate Prisoner"
-	uniform = /obj/item/clothing/under/syndicate/skyrat/tactical
+	uniform = /obj/item/clothing/under/dual_tone/prisonner //GS13 EDIT - ORIGINAL: uniform = /obj/item/clothing/under/syndicate/skyrat/tactical
 	shoes = /obj/item/clothing/shoes/combat
-	id = /obj/item/card/id/advanced/prisoner/ds2
-	id_trim = /datum/id_trim/syndicom/bubberstation/persistence/prisoner
+	// id = /obj/item/card/id/advanced/prisoner/ds2  //GS13 EDIT - COMMENTED OUT ID SO PRISONERS CAN'T WALK OUT OF PRISON
+	// id_trim = /datum/id_trim/syndicom/bubberstation/persistence/prisoner //GS13 EDIT - COMMENTED OUT ID SO PRISONERS CAN'T WALK OUT OF PRISON
 
 //Persistence Roles
 

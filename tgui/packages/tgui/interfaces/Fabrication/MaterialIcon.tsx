@@ -55,7 +55,9 @@ const MATERIAL_ICONS: Record<string, [number, string][]> = {
   ],
   // GS13 EDIT - adds calorite display
   calorite: [
-    [0, 'sheet-calorite']
+    [0, 'sheet-calorite'],
+    [17, 'sheet-calorite_2'],
+    [34, 'sheet-calorite_3'],
   ],
   // GS13 END EDIT
 };

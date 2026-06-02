@@ -1,0 +1,48 @@
+2026-05-15:
+  Icepick200:
+  - rscadd: Added the Genetic Mutation quirk, allowing you to get ONE roundstart gene
+      from a list.
+  - rscadd: Adds a new quirk that allows you to accidentally knock stuff off tables.
+  Swan:
+  - rscadd: the storyteller should be more aggresive with it's event spawning
+  - rscadd: automatic storyteller votes, which fire mid round to decide which storyteller
+      should be picked
+  - code_imp: merges with upstream
+  - bugfix: fixes the forensic scanners
+  - rscadd: Adds galbanium. Made by combining lipoifium and BZ above 5000 kelvin,
+      it increases perma fat without adding regular fat.
+  - rscadd: Calorite collars have had their weight gain rate increase lowered from
+      1.5 to 0.5
+  - rscadd: Adds milk melons
+  - bugfix: fixes beanbag chairs not being craftable from cloth
+  - bugfix: fixes beanbag chairs requiring a wrench to deconstruct. They will now
+      require wirecutters.
+  evilew:
+  - map: 'Added Starshine vendors to a few maps: Interlink, CentComm, Ghost Cafe,
+      Box, IceBox, Kilo and Meta.'
+  - rscadd: 'added breasts variant: no nipples'
+  - rscadd: 'added belly variants: no bellybutton/nipples & no bellybutton/nipples/fat
+      arms'
+2026-05-31:
+  Grarem:
+  - rscadd: Prefed bursting related sounds
+  - balance: small increase in damage done while crit bursting
+  Icepick200:
+  - rscadd: Added the Silverscale tongue to the augments+ menu and tweaked how it
+      works. Gargoyles rejoice!
+  Swan:
+  - bugfix: fixes the material icons in the protolathe/mech fabricator/silo being
+      completely and utterly fucked
+  - bugfix: fixes the event perk redeemer showing up item amounts as null
+  - bugfix: fixes milk melons not being obtainable by mutating melons
+  - rscadd: thick fingers from weight helplessness mechanic no longer gives the clumsy
+      trait
+  - bugfix: fixes the MOD mobility assist module breaking helplessness mechanics triggering
+  - code_imp: refactored helplessness code. Again.
+  evilew:
+  - map: GATOified Biodome
+  - map: Persistence Syndicate Outpost got a larger section for feeder den esque stuff,
+      including a new vendor with kink tools
+  - map: 'Persistence also got 2 new ghost roles: Syndicate Feedee & Feeder. Feedee
+      is functionally the same to Syndicate Hostage, and Feeder is the same to a normal
+      Brig Syndie, but they''ve been renamed for visibility'

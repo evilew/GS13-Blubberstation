@@ -1,6 +1,6 @@
 /datum/material/calorite
 	name = "calorite"
-	color = list(340/255, 150/255, 50/255,0, 0,0,0,0, 0,0,0,0, 0,0,0,1, 0,0,0,0)
+	color = "#eb6e00"
 	strength_modifier = 1.5
 	integrity_modifier = 0.25
 	categories = list(
