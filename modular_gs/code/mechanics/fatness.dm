@@ -1,5 +1,7 @@
-/mob/living
-	var/burpslurring = 0 //GS13 - necessary due to "say" being defined by mob/living
+/// Helper to get the amount of gassiness the mob's currently experiencing.
+/mob/living/proc/get_gassy_amount()
+	var/datum/status_effect/burpslurring/burpslur = has_status_effect(/datum/status_effect/burpslurring)
+	return burpslur?.gassy_value || 0
 
 /mob/living/carbon
 	//Due to the changes needed to create the system to hide fatness, here's some notes:
@@ -28,15 +30,13 @@
 	var/flip_gain_rate = FALSE
 	/// whether we flip the sign on the final WL rate. This will make any slimming action make you gain weight
 	var/flip_loss_rate = FALSE
-	//Variable related to door stuckage code
-	var/doorstuck = 0
 	/// What is the maximum amount of weight we can put on?
 	var/max_weight
 
 	var/fullness = 20
 	/// by how much we reduce the mob fullness compared to what it actually is
-	var/fullness_reduction = 0
 	var/fullness_reduction_timer = 0 // When was the last time they emoted to reduce their fullness
+	var/fullness_adjustment = 0
 
 	/// How many humanoid mobs have been digested by this mob?
 	var/carbons_digested = 0
@@ -221,21 +221,56 @@
 /mob/living/carbon/get_fullness(only_consumable)
 	. = ..()
 	fullness = .	// old fullness
-	return max(0, fullness - fullness_reduction)
+	return max(0, fullness + fullness_adjustment)
 
-/mob/living/carbon/proc/fullness_reduction()
+/mob/living/carbon/proc/fullness_adjustment()
 	var/max_fullness_reduction = max(fullness + 500, 600)
-	fullness_reduction -= 15
-	fullness_reduction = clamp(fullness_reduction, 0, max_fullness_reduction)
+	if(fullness_adjustment > 15)
+		fullness_adjustment -= 15
+	else if(fullness_adjustment < -15)
+		fullness_adjustment += 15
+	else
+		fullness_adjustment = 0
+	// You can either be reduced by max_fullness_reduction, or increased all the way to max fullness!
+	fullness_adjustment = clamp(fullness_adjustment, -max_fullness_reduction, FULLNESS_MAX - fullness)
+
+
 
 /// adjusts the mob hunger - essentially just reduces fullness. Calling this is preferred to doint it manually since it adjusts for the default hunger reduction rate
 /mob/living/carbon/proc/adjust_hunger(amount)
-	fullness_reduction += 15 + amount
+	fullness_adjustment -= (15 + amount)
 
-/mob/living/carbon/fully_heal(admin_revive)
+/// Remove all of the real fatness from a mob.
+/mob/living/carbon/proc/fully_heal_fatness(remove_perma = FALSE, custom_remove_text, custom_perma_remove_text)
+	var/regular_remove_text = "You feel much lighter."
+	var/perma_remove_text = "The weight that you've held onto for so long, just vanishes away."
+
+	if(custom_remove_text)
+		regular_remove_text = custom_remove_text
+	if(custom_perma_remove_text)
+		perma_remove_text = perma_remove_text
+
 	fatness = 0
 	fatness_real = 0
-	. = ..()
+
+	if(regular_remove_text)
+		to_chat(src, span_boldnicegreen(regular_remove_text))
+
+	if(remove_perma)
+		fatness_perma = 0
+		if(perma_remove_text)
+			to_chat(src, span_boldnicegreen(perma_remove_text))
+
+/// Virtual sin forgiveness
+/mob/living/carbon/proc/fully_heal_fatness_shitpost(remove_perma = FALSE)
+	var/regular_text = "I absolve you of your sins, you have been forgvien"
+	var/perma_text = ""
+
+	if(remove_perma)
+		perma_text = regular_text
+		regular_text = ""
+
+	fully_heal_fatness(remove_perma, regular_text, perma_text)
 
 ///Checks the parent mob's prefs to see if they can be fattened by the fattening_type
 /mob/living/carbon/proc/check_weight_prefs(type_of_fattening = FATTENING_TYPE_ITEM)
@@ -357,7 +392,7 @@
 
 	if(fatness_perma + amount_to_change < 0)
 		amount_to_change = -fatness_perma
-	
+
 	fatness_perma += amount_to_change
 	fatness_perma = max(fatness_perma, 0)
 
