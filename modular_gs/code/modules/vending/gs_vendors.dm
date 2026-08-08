@@ -96,6 +96,8 @@
 	products = list(
 				/obj/item/melee/curator_whip/fattening = 99,
 				/obj/item/melee/curator_whip/permafattening = 99,
+				/obj/item/pen/calorite = 99,
+				/obj/item/pen/calorite/syndicate = 99,
 				/obj/item/gavelhammer/fattening = 99,
 				/obj/item/gavelhammer/permafattening = 99,
 				/obj/item/gun/energy/fatoray/cannon = 99,
@@ -130,7 +132,7 @@
 	refill_canister = /obj/item/vending_refill/fattywank
 
 /obj/machinery/vending/fatty_items/syndicate
-	name = "Waistline Sabotager Vendor"
+	name = "Waistline Saboteur Vendor"
 	products = list(
 				/obj/item/melee/curator_whip/fattening = 2,
 				/obj/item/melee/curator_whip/permafattening = 1,
@@ -150,11 +152,12 @@
 				/obj/item/reagent_containers/cup/beaker/galbanic = 1,
 				/obj/item/reagent_containers/cup/beaker/lipoifier = 2,
 				/obj/item/reagent_containers/cup/beaker/micro_calorite = 1,
-				/obj/item/dnainjector/fatfang = 2
+				/obj/item/dnainjector/fatfang = 2,
+				/obj/item/pen/calorite/syndicate = 4
 				)
 
 /obj/item/vending_refill/fattywank
-	machine_name = "Waistline Sabotager Refill"
+	machine_name = "Waistline Saboteur Refill"
 	icon = 'modular_gs/icons/obj/vending_restock.dmi'
 	icon_state = "refill_mealdor"
 
