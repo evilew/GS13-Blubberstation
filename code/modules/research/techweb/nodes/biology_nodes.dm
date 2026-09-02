@@ -12,6 +12,7 @@
 		"ph_meter",
 		"scigoggles",
 		"mod_reagent_scanner",
+		"weightanalyzer",	// GS13 EDIT: adds the weight analyzer
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_1_POINTS)
 	announce_channels = list(RADIO_CHANNEL_MEDICAL)
@@ -39,10 +40,12 @@
 	design_ids = list(
 		"xenobioconsole",
 		"slime_scanner",
+		/* BUBBER EDIT REMOVE - LIMB GROWERS INCLUDE ALL LIMB TYPES
 		"limbdesign_ethereal",
 		"limbdesign_felinid",
 		"limbdesign_lizard",
 		"limbdesign_plasmaman",
+		*/
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_3_POINTS)
 	discount_experiments = list(/datum/experiment/scanning/cytology/slime = TECHWEB_TIER_3_POINTS)
