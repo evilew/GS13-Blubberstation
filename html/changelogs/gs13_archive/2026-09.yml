@@ -45,3 +45,6 @@
   Icepick200:
   - qol: Added more recolorable areas to the modular bunny suit
   - bugfix: fixed a few sprite issues with the modular bunny suit
+2026-09-20:
+  Swan:
+  - bugfix: fixes GT consultant icon not showing up in the orbit menu
