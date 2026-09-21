@@ -483,7 +483,7 @@
 	width = 35
 	},
 /turf/template_noop,
-/area/template_noop)
+/area/space/nearstation)
 "eg" = (
 /obj/structure/chair/beanbag/gato{
 	dir = 8

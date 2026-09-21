@@ -36,4 +36,5 @@
 	icon_state = "holo_closed"
 	base_icon_state = "holo_closed"
 	density = TRUE
+	creation_time = 4
 	allow_walk = TRUE
