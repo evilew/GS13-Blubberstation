@@ -2,7 +2,8 @@
 //food truck shuttle code
 /datum/map_template/shuttle/ruin/food_truck
 	prefix = "_maps/shuttles/gs/"
-	suffix = "food_truck"
+	port_id = "food"
+	suffix = "truck"
 	name = "GATO Food Truck"
 
 /obj/machinery/computer/shuttle/caravan/food_truck

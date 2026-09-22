@@ -20,7 +20,8 @@
 	name = "doodad";
 	pixel_x = 1
 	},
-/turf/open/floor/plating,
+/obj/structure/lattice/catwalk,
+/turf/template_noop,
 /area/shuttle/food_truck)
 "bV" = (
 /obj/effect/mapping_helpers/airalarm/away_general_access,
@@ -29,6 +30,7 @@
 /obj/structure/closet/emcloset/wall{
 	pixel_x = 32
 	},
+/obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "da" = (
@@ -55,7 +57,6 @@
 /area/shuttle/food_truck)
 "hC" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "gatofood_foodtruck"
 	},
@@ -67,7 +68,8 @@
 	pixel_y = 4;
 	pixel_x = 1
 	},
-/turf/open/floor/plating,
+/obj/effect/turf_decal/stripes,
+/turf/open/floor/iron/dark,
 /area/shuttle/food_truck)
 "jD" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
@@ -110,16 +112,10 @@
 	},
 /area/shuttle/food_truck)
 "kp" = (
-/obj/structure/fluff/metalpole{
-	dir = 6;
-	pixel_x = 0;
-	pixel_y = 15
-	},
-/turf/closed/wall/mineral/titanium,
-/area/shuttle/food_truck)
-"lw" = (
 /obj/structure/fluff/metalpole/end{
-	dir = 1
+	dir = 1;
+	pixel_x = -12;
+	pixel_y = 32
 	},
 /obj/item/stack/marker_beacon{
 	anchored = 1;
@@ -129,30 +125,42 @@
 	light_range = 2;
 	name = "landing marker";
 	picked_color = "Burgundy";
-	pixel_x = 1;
-	pixel_y = 6
+	pixel_x = -12;
+	pixel_y = 37
 	},
-/turf/template_noop,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/food_truck)
+"lw" = (
+/obj/structure/fluff/metalpole/anchor{
+	dir = 8;
+	pixel_x = 32
+	},
+/obj/structure/fluff/metalpole{
+	dir = 4;
+	pixel_x = 32
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/food_truck)
 "ma" = (
 /obj/machinery/computer/shuttle/caravan/food_truck,
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "mV" = (
-/obj/structure/fluff/metalpole{
-	dir = 6
+/obj/structure/fluff/metalpole/end{
+	dir = 1;
+	pixel_x = -23;
+	pixel_y = 0
 	},
-/obj/structure/fluff/sat_dish,
-/turf/template_noop,
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/food_truck)
 "nN" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "gatofood_foodtruck"
 	},
 /obj/item/sign/flag/gato,
-/turf/open/floor/plating,
+/obj/effect/turf_decal/stripes,
+/turf/open/floor/iron/dark,
 /area/shuttle/food_truck)
 "nV" = (
 /obj/structure/railing/corner/end{
@@ -176,17 +184,22 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/food_truck)
 "oo" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
 /obj/machinery/griddle{
 	pixel_x = 4;
 	pixel_y = 0
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 8
 	},
+/obj/structure/fluff/metalpole/anchor{
+	dir = 4;
+	pixel_x = -32
+	},
+/obj/structure/fluff/metalpole{
+	dir = 8;
+	pixel_x = -32
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/west,
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "ph" = (
@@ -257,6 +270,7 @@
 "tM" = (
 /obj/structure/window/reinforced/shuttle,
 /obj/structure/sign/gato,
+/obj/structure/grille,
 /turf/open/floor/plating,
 /area/shuttle/food_truck)
 "ue" = (
@@ -289,6 +303,7 @@
 /obj/item/knife/butcher,
 /obj/item/kitchen/rollingpin,
 /obj/item/stack/package_wrap,
+/obj/item/book/manual/chef_recipes,
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "wm" = (
@@ -300,11 +315,11 @@
 /area/shuttle/food_truck)
 "wO" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "gatofood_foodtruck"
 	},
-/turf/open/floor/plating,
+/obj/effect/turf_decal/stripes,
+/turf/open/floor/iron/dark,
 /area/shuttle/food_truck)
 "xL" = (
 /obj/machinery/door/airlock/public{
@@ -317,34 +332,32 @@
 /area/shuttle/food_truck)
 "AA" = (
 /obj/structure/fluff/metalpole/end{
-	dir = 1
-	},
-/turf/template_noop,
-/area/shuttle/food_truck)
-"AB" = (
-/obj/machinery/chem_dispenser/frontier_appliance{
-	pixel_x = -4;
+	dir = 1;
+	pixel_x = 23;
 	pixel_y = 0
 	},
-/obj/machinery/reagentgrinder{
-	pixel_x = 13;
-	pixel_y = 5
-	},
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/food_truck)
+"AB" = (
 /obj/effect/decal/gatofull_2{
 	pixel_x = -1;
 	pixel_y = 32
 	},
 /obj/structure/table/reinforced,
+/obj/machinery/reagentgrinder{
+	pixel_x = 8;
+	pixel_y = 8
+	},
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "Ct" = (
-/obj/structure/fluff/metalpole/anchor{
-	dir = 8
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/biogenerator/medstation/directional/east{
+	pixel_x = 29;
+	pixel_y = -3
 	},
-/obj/structure/fluff/metalpole{
-	dir = 4
-	},
-/turf/template_noop,
+/turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "DL" = (
 /obj/machinery/door/airlock/external{
@@ -364,6 +377,7 @@
 "DV" = (
 /obj/structure/window/reinforced/shuttle,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/grille,
 /turf/open/floor/plating,
 /area/shuttle/food_truck)
 "EB" = (
@@ -386,17 +400,22 @@
 /turf/open/floor/plastic,
 /area/shuttle/food_truck)
 "FV" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
 /obj/machinery/deepfryer{
 	pixel_x = 4;
 	pixel_y = 0
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 8
 	},
+/obj/structure/fluff/metalpole/anchor{
+	dir = 4;
+	pixel_x = -32
+	},
+/obj/structure/fluff/metalpole{
+	dir = 8;
+	pixel_x = -32
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/west,
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "Gc" = (
@@ -427,12 +446,14 @@
 /area/shuttle/food_truck)
 "JD" = (
 /obj/structure/fluff/metalpole/anchor{
-	dir = 4
+	dir = 4;
+	pixel_x = -32
 	},
 /obj/structure/fluff/metalpole{
-	dir = 8
+	dir = 8;
+	pixel_x = -32
 	},
-/turf/template_noop,
+/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/food_truck)
 "Ky" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -503,13 +524,17 @@
 	name = "doodad";
 	pixel_x = 1
 	},
-/turf/open/floor/plating,
+/obj/structure/lattice/catwalk,
+/turf/template_noop,
 /area/shuttle/food_truck)
 "NA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/button/door/directional/east{
-	id = "foodtruck_cockpit"
+	normaldoorcontrol = 1;
+	specialfunctions = 4;
+	id = "foodtruck_cockpit";
+	name = "Cockpit Door Lock"
 	},
 /turf/open/floor/iron/stairs{
 	dir = 1
@@ -536,21 +561,16 @@
 /turf/open/floor/engine,
 /area/shuttle/food_truck)
 "Pv" = (
-/obj/structure/fluff/metalpole/end{
-	dir = 1
+/obj/structure/fluff/metalpole{
+	dir = 6;
+	pixel_x = -23;
+	pixel_y = 0
 	},
-/obj/item/stack/marker_beacon{
-	anchored = 1;
-	icon_state = "markerburgundy-on";
-	light_color = "#FA644B";
-	light_power = 3;
-	light_range = 2;
-	name = "landing marker";
-	picked_color = "Burgundy";
-	pixel_x = 0;
-	pixel_y = 7
+/obj/structure/fluff/sat_dish{
+	pixel_x = -23;
+	pixel_y = -1
 	},
-/turf/template_noop,
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/food_truck)
 "Rf" = (
 /obj/structure/chair/stool/bar/directional/north,
@@ -568,16 +588,23 @@
 	},
 /area/shuttle/food_truck)
 "RH" = (
-/obj/machinery/power/shuttle_engine/propulsion/burst/right{
-	pixel_y = 10
+/obj/structure/fluff/metalpole/end{
+	dir = 1;
+	pixel_x = 12;
+	pixel_y = 32
 	},
-/obj/structure/fluff/metalpole/anchor{
-	dir = 8
+/obj/item/stack/marker_beacon{
+	anchored = 1;
+	icon_state = "markerburgundy-on";
+	light_color = "#FA644B";
+	light_power = 3;
+	light_range = 2;
+	name = "landing marker";
+	picked_color = "Burgundy";
+	pixel_x = 13;
+	pixel_y = 37
 	},
-/obj/structure/fluff/metalpole{
-	dir = 4
-	},
-/turf/template_noop,
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/food_truck)
 "RN" = (
 /obj/structure/chair/stool/bar/directional/north,
@@ -594,7 +621,6 @@
 /area/shuttle/food_truck)
 "RX" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "gatofood_foodtruck"
 	},
@@ -606,7 +632,8 @@
 	pixel_x = 10;
 	pixel_y = -1
 	},
-/turf/open/floor/plating,
+/obj/effect/turf_decal/stripes,
+/turf/open/floor/iron/dark,
 /area/shuttle/food_truck)
 "Sd" = (
 /obj/machinery/light/floor,
@@ -643,15 +670,16 @@
 /turf/open/floor/iron/shuttle/exploration,
 /area/shuttle/food_truck)
 "Sw" = (
-/obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "gatofood_foodtruck"
 	},
 /obj/structure/table/reinforced,
-/turf/open/floor/plating,
+/obj/effect/turf_decal/stripes,
+/turf/open/floor/iron/dark,
 /area/shuttle/food_truck)
 "Sy" = (
 /obj/structure/window/reinforced/shuttle,
+/obj/structure/grille,
 /turf/open/floor/plating,
 /area/shuttle/food_truck)
 "SE" = (
@@ -690,16 +718,16 @@
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "Tm" = (
-/obj/machinery/power/shuttle_engine/propulsion/burst/right{
-	pixel_y = 10
-	},
-/obj/structure/fluff/metalpole/anchor{
-	dir = 4
-	},
 /obj/structure/fluff/metalpole{
-	dir = 8
+	dir = 6;
+	pixel_x = 23;
+	pixel_y = 0
 	},
-/turf/template_noop,
+/obj/structure/fluff/sat_dish{
+	pixel_x = 23;
+	pixel_y = -1
+	},
+/turf/closed/wall/mineral/titanium,
 /area/shuttle/food_truck)
 "Tz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -724,8 +752,17 @@
 	pixel_y = 30;
 	name = "kitchen storage"
 	},
+/obj/item/reagent_containers/cup/beaker/large,
+/obj/item/storage/bag/tray,
+/obj/item/reagent_containers/cup/paper_cup/big,
+/obj/item/reagent_containers/cup/paper_cup/big,
+/obj/item/reagent_containers/cup/paper_cup/big,
+/obj/item/reagent_containers/cup/paper_cup/big,
+/obj/item/reagent_containers/cup/paper_cup/big,
+/obj/item/reagent_containers/cup/paper_cup/big,
+/obj/item/reagent_containers/cup/paper_cup/big,
+/obj/item/reagent_containers/cup/paper_cup/big,
 /obj/item/reagent_containers/condiment/enzyme,
-/obj/item/book/manual/chef_recipes,
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "XF" = (
@@ -769,79 +806,94 @@
 	pixel_x = -1;
 	pixel_y = 32
 	},
+/obj/machinery/biogenerator/lizard_gas_smartfridge,
 /obj/machinery/microwave/frontier_printed{
-	pixel_x = 2;
-	pixel_y = 1
+	pixel_x = 0;
+	pixel_y = 18
 	},
-/obj/structure/table/reinforced,
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "ZE" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
 /obj/machinery/vending/dinnerware{
 	free = 1;
 	all_products_free = 1;
 	pixel_x = -2;
 	pixel_y = 0
 	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 4
 	},
-/obj/machinery/button/door/directional/south{
-	pixel_x = -6;
-	pixel_y = -26;
-	id = "foodtruck_kitchen";
-	name = "Kitchen Door Bolts"
+/obj/structure/fluff/metalpole/anchor{
+	dir = 8;
+	pixel_x = 32
 	},
+/obj/structure/fluff/metalpole{
+	dir = 4;
+	pixel_x = 32
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
 /obj/machinery/button/door/directional/south{
 	pixel_x = 6;
-	pixel_y = -26;
+	pixel_y = -24;
+	normaldoorcontrol = 1;
+	specialfunctions = 4;
 	id = "foodtruck_airlock";
-	name = "Entrance Door Bolts"
+	name = "Entrance Door Lock"
+	},
+/obj/machinery/button/door/directional/south{
+	pixel_x = -6;
+	pixel_y = -24;
+	normaldoorcontrol = 1;
+	specialfunctions = 4;
+	id = "foodtruck_kitchen";
+	name = "Kitchen Door Lock"
 	},
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 "ZZ" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
-/obj/machinery/smartfridge/food,
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 4
 	},
+/obj/machinery/light_switch/default_on/directional/north,
+/obj/structure/fluff/metalpole/anchor{
+	dir = 8;
+	pixel_x = 32
+	},
+/obj/structure/fluff/metalpole{
+	dir = 4;
+	pixel_x = 32
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/machinery/smartfridge/food,
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/food_truck)
 
 (1,1,1) = {"
 az
 az
-AA
-mV
-Xf
+az
+az
+VK
 bt
-Tm
-JD
-JD
-JD
+Lf
+az
+az
+az
 Xf
 Ng
 Lf
 "}
 (2,1,1) = {"
-lw
-kp
+az
+RH
+mV
+Pv
 VK
-Xf
-Xf
 DV
-Xf
+JD
 FV
 oo
-Xf
+JD
 Xf
 Sy
 wm
@@ -947,21 +999,21 @@ He
 SW
 FE
 xL
-SW
+Ct
 Hu
 DL
 "}
 (10,1,1) = {"
-Pv
+az
 kp
+AA
+Tm
 VK
-Xf
-Xf
 Sy
-Xf
+lw
 ZZ
 ZE
-Xf
+lw
 Xf
 Sy
 NK
@@ -969,14 +1021,14 @@ NK
 (11,1,1) = {"
 az
 az
-AA
-mV
-Xf
+az
+az
+VK
 Ng
-RH
-Ct
-Ct
-Ct
+Lf
+az
+az
+az
 Xf
 Ng
 Lf
