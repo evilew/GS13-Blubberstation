@@ -4,6 +4,7 @@
 	holosign_type = /obj/structure/holosign/barrier/gatofood_ad
 	creation_time = 0
 	max_signs = 8
+	creation_time = 0
 	projectable_through = list(
 		/obj/machinery/door,
 		/obj/structure/mineral_door,
@@ -36,5 +37,4 @@
 	icon_state = "holo_closed"
 	base_icon_state = "holo_closed"
 	density = TRUE
-	creation_time = 4
 	allow_walk = TRUE

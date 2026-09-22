@@ -475,12 +475,11 @@
 /area/space/nearstation)
 "ef" = (
 /obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 11;
-	height = 24;
 	name = "GATO Fast Food, Restaurant Port";
-	shuttle_id = "gato_restaurant";
-	width = 35
+	shuttle_id = "food_truck_home";
+	roundstart_template = /datum/map_template/shuttle/ruin/food_truck;
+	width = 11;
+	height = 13
 	},
 /turf/template_noop,
 /area/space/nearstation)
@@ -1639,6 +1638,10 @@
 /obj/structure/sign/poster/contraband/loosen/directional/north,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/fastfood_employee)
+"sa" = (
+/obj/effect/turf_decal/stripes/box,
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "sg" = (
 /obj/effect/turf_decal/trimline/brown/filled/corner{
 	dir = 1
@@ -6906,7 +6909,7 @@ pP
 pP
 pP
 pP
-KS
+sa
 gS
 mM
 mM
@@ -7138,7 +7141,7 @@ pP
 pP
 pP
 pP
-KS
+sa
 gS
 mM
 mM
