@@ -1,4 +1,26 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/machinery/power/shuttle_engine/heater{
+	pixel_y = 9
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/structure/decorative{
+	icon_state = "cell_charger_packed";
+	pixel_y = 15;
+	icon = 'modular_skyrat/modules/colony_fabricator/icons/packed_machines.dmi';
+	base_icon_state = "recharger";
+	dir = 8;
+	anchored = 1;
+	name = "doodad";
+	pixel_x = 1
+	},
+/obj/structure/lattice/catwalk,
+/obj/machinery/power/shuttle_engine/propulsion/burst/left{
+	pixel_x = 0;
+	pixel_y = -22
+	},
+/turf/template_noop,
+/area/shuttle/food_truck)
 "az" = (
 /turf/template_noop,
 /area/template_noop)
@@ -21,6 +43,10 @@
 	pixel_x = 1
 	},
 /obj/structure/lattice/catwalk,
+/obj/machinery/power/shuttle_engine/propulsion/burst/left{
+	pixel_x = 0;
+	pixel_y = -22
+	},
 /turf/template_noop,
 /area/shuttle/food_truck)
 "bV" = (
@@ -468,9 +494,6 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/food_truck)
 "Lf" = (
-/obj/machinery/power/shuttle_engine/propulsion/burst/right{
-	pixel_y = 10
-	},
 /turf/template_noop,
 /area/shuttle/food_truck)
 "Mq" = (
@@ -525,6 +548,10 @@
 	pixel_x = 1
 	},
 /obj/structure/lattice/catwalk,
+/obj/machinery/power/shuttle_engine/propulsion/burst/right{
+	pixel_x = 0;
+	pixel_y = -22
+	},
 /turf/template_noop,
 /area/shuttle/food_truck)
 "NA" = (
@@ -880,7 +907,7 @@ az
 az
 az
 Xf
-Ng
+aa
 Lf
 "}
 (2,1,1) = {"

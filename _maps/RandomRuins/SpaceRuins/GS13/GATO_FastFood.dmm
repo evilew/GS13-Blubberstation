@@ -1639,6 +1639,13 @@
 	},
 /turf/open/floor/wood/tile,
 /area/ruin/space/has_grav/fastfood_employee)
+"rT" = (
+/obj/effect/turf_decal{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/telecomms,
+/area/ruin/space/has_grav/fastfood_employee)
 "rV" = (
 /obj/machinery/chem_dispenser/drinks/fullupgrade{
 	dir = 8
@@ -3416,7 +3423,7 @@
 /area/ruin/space/has_grav/fastfood_main)
 "Ig" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/bluespace,
+/turf/open/floor/glass/reinforced/telecomms,
 /area/ruin/space/has_grav/fastfood_employee)
 "In" = (
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -4329,7 +4336,7 @@
 /obj/machinery/telecomms/relay/preset/mining,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/directional/east,
-/turf/open/floor/bluespace,
+/turf/open/floor/glass/reinforced/telecomms,
 /area/ruin/space/has_grav/fastfood_employee)
 "RH" = (
 /obj/machinery/recharge_station,
@@ -7362,7 +7369,7 @@ gS
 ps
 dN
 Ig
-xY
+rT
 ps
 lt
 pM
