@@ -1,10 +1,10 @@
+//advertising sign
 /obj/item/holosign_creator/gatofood_ad
 	name = "GATO advertisment projector"
 	desc = "A holographic projector that creates holographic signs, advertising the local GATO restaurant."
 	holosign_type = /obj/structure/holosign/barrier/gatofood_ad
-	creation_time = 0
+	creation_time = 4
 	max_signs = 8
-	creation_time = 0
 	projectable_through = list(
 		/obj/machinery/door,
 		/obj/structure/mineral_door,
@@ -25,6 +25,7 @@
 	alpha = 150
 	resistance_flags = FIRE_PROOF | FREEZE_PROOF
 
+//closed sign - maybe printable by Service in the future?
 /obj/item/holosign_creator/gatofood_ad/closed
 	name = "Closure sign projector"
 	icon_state = "signmaker_sec"

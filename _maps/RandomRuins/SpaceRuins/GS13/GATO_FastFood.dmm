@@ -350,7 +350,10 @@
 /obj/machinery/button/door{
 	pixel_x = 27;
 	pixel_y = -1;
-	id = "gato_toilet3"
+	id = "gato_toilet3";
+	specialfunctions = 4;
+	normaldoorcontrol = 1;
+	name = "Poopenfarten Door Lock"
 	},
 /turf/open/floor/iron/white/smooth_large,
 /area/ruin/space/has_grav/fastfood_employee)
@@ -411,6 +414,7 @@
 /obj/item/food/burger/plain,
 /obj/item/food/burger/plain,
 /obj/item/food/burger/mcguffin,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/fastfood_employee)
 "dK" = (
@@ -644,6 +648,7 @@
 /obj/machinery/airalarm/directional/south{
 	req_access = null
 	},
+/obj/effect/mapping_helpers/airalarm/away_general_access,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/fastfood_employee)
 "gK" = (
@@ -869,6 +874,7 @@
 	pixel_y = 7
 	},
 /obj/machinery/airalarm/directional/south,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/fastfood_employee)
 "jE" = (
@@ -937,7 +943,9 @@
 /obj/machinery/button/door{
 	pixel_x = 0;
 	pixel_y = 28;
-	id = "gato_toilet1"
+	id = "gato_toilet1";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /turf/open/floor/iron/white/smooth_large,
 /area/ruin/space/has_grav/fastfood_main)
@@ -1050,17 +1058,17 @@
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/fastfood_employee)
 "lR" = (
-/obj/structure/rack/shelf,
 /obj/structure/railing{
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
-/obj/item/folded_navigation_gigabeacon,
-/obj/item/folded_navigation_gigabeacon,
-/obj/item/folded_navigation_gigabeacon,
-/obj/item/folded_navigation_gigabeacon,
+/obj/structure/filingcabinet,
+/obj/item/paper/fluff/ruins/fastfood,
+/obj/item/paper/fluff/ruins/fastfood,
+/obj/item/paper/fluff/ruins/fastfood,
+/obj/item/folder/yellow,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/space/has_grav/fastfood_employee)
 "lV" = (
@@ -1386,16 +1394,14 @@
 /area/ruin/space/has_grav/fastfood_employee)
 "ol" = (
 /obj/machinery/door/airlock/public{
-	name = "EMPLOYEE ONLY"
+	name = "EMPLOYEE ONLY";
+	id_tag = "gatofood_kitchen2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/duct,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "gatofood_kitchen2"
-	},
 /turf/open/floor/iron/large,
 /area/ruin/space/has_grav/fastfood_employee)
 "or" = (
@@ -1403,6 +1409,7 @@
 	dir = 4
 	},
 /obj/machinery/airalarm/directional/north,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
 /turf/open/floor/iron/smooth_half,
 /area/ruin/space/has_grav/fastfood_employee)
 "os" = (
@@ -1757,8 +1764,10 @@
 /obj/machinery/button/door{
 	pixel_x = 25;
 	pixel_y = -5;
-	name = "door shutters";
-	id = "gatofood_kitchen2"
+	name = "Door Lock";
+	id = "gatofood_kitchen2";
+	normaldoorcontrol = 1;
+	specialfunctions = 4
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/fastfood_employee)
@@ -2277,8 +2286,10 @@
 /obj/machinery/button/door{
 	pixel_x = 6;
 	pixel_y = -26;
-	name = "door shutters";
-	id = "gatofood_kitchen3"
+	name = "Door Lock";
+	id = "gatofood_kitchen3";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/fastfood_employee)
@@ -2329,6 +2340,7 @@
 /obj/machinery/autolathe/hacked,
 /obj/machinery/light/small/directional/north,
 /obj/machinery/airalarm/directional/north,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/fastfood_employee)
 "xY" = (
@@ -2675,6 +2687,7 @@
 "Bt" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/rack,
+/obj/item/construction/plumbing/service,
 /turf/open/floor/iron/large,
 /area/ruin/space/has_grav/fastfood_employee)
 "Bu" = (
@@ -2943,6 +2956,8 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
+/obj/item/paper/fluff/ruins/fastfood,
+/obj/item/paper/fluff/ruins/fastfood,
 /turf/open/floor/wood/tile,
 /area/ruin/space/has_grav/fastfood_employee)
 "DS" = (
@@ -3141,8 +3156,10 @@
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/space/has_grav/fastfood_employee)
 "Fz" = (
-/obj/item/stack/sheet/cardboard/fifty,
 /obj/structure/rack/shelf,
+/obj/item/folded_navigation_gigabeacon,
+/obj/item/folded_navigation_gigabeacon,
+/obj/item/folded_navigation_gigabeacon,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/space/has_grav/fastfood_employee)
 "FB" = (
@@ -3176,6 +3193,7 @@
 /obj/effect/mob_spawn/ghost_role/human/gato_fastfood/manager{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/airalarm/away_general_access,
 /turf/open/floor/carpet/royalblack,
 /area/ruin/space/has_grav/fastfood_employee)
 "Ga" = (
@@ -4056,9 +4074,9 @@
 /area/space/nearstation)
 "Oa" = (
 /obj/structure/rack/shelf,
-/obj/item/construction/plumbing/service,
 /obj/item/radio/intercom/directional/north,
 /obj/machinery/light/small/directional/north,
+/obj/item/stack/sheet/cardboard/fifty,
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/space/has_grav/fastfood_employee)
 "Od" = (
@@ -4167,6 +4185,8 @@
 "PW" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cell_10k,
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/fastfood_employee)
 "Qf" = (
@@ -4395,6 +4415,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/machinery/duct,
+/obj/effect/mapping_helpers/apc/away_general_access,
+/obj/effect/mapping_helpers/apc/cell_10k,
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/has_grav/fastfood_main)
 "Tm" = (
@@ -4555,6 +4577,7 @@
 /obj/item/knife/butcher,
 /obj/item/book/manual/chef_recipes,
 /obj/machinery/light/small/directional/north,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/ruin/space/has_grav/fastfood_employee)
 "UV" = (
@@ -4579,7 +4602,9 @@
 /obj/machinery/button/door{
 	pixel_x = 0;
 	pixel_y = 28;
-	id = "gato_toilet2"
+	id = "gato_toilet2";
+	specialfunctions = 4;
+	normaldoorcontrol = 1
 	},
 /obj/item/food/raw_tiziran_sausage,
 /turf/open/floor/iron/white/smooth_large,
@@ -4690,6 +4715,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/south,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/fastfood_employee)
 "Wt" = (
@@ -4816,6 +4842,7 @@
 "XW" = (
 /obj/structure/table/reinforced,
 /obj/machinery/chem_dispenser/drinks,
+/obj/effect/mapping_helpers/airalarm/away_general_access,
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/fastfood_employee)
 "Yf" = (
@@ -4887,15 +4914,13 @@
 /area/ruin/space/has_grav/fastfood_employee)
 "Zi" = (
 /obj/machinery/door/airlock/public{
-	name = "EMPLOYEE ONLY"
+	name = "EMPLOYEE ONLY";
+	id_tag = "gatofood_kitchen3"
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "gatofood_kitchen3"
-	},
 /turf/open/floor/iron/textured_large,
 /area/ruin/space/has_grav/fastfood_employee)
 "Zl" = (

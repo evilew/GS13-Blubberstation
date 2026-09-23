@@ -195,7 +195,7 @@
 	- You have 2 holo-projectors at your disposal: One for setting up a restaurant advertisment, the other for signalling the restaurant is closed.<br>\
 	- There are navigation mega-beacons available in cargo bay. You may set these right outside your dock to allow ships to travel there.\
 	- You may use the Foodtruck Whiteship parked outside the Cargo Bay blast doors to reach the station or other locations.\
-	- It's advised to set up a menu for clients to browse from. You can find blank menu cards in the cargo bay. Or you can just set up your own!\
+	- It's advised to set up a menu for clients to browse from.\
 	<br>\
 	<h1>Good luck!</h1>"
 
