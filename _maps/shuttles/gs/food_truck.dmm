@@ -493,9 +493,6 @@
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/food_truck)
-"Lf" = (
-/turf/template_noop,
-/area/shuttle/food_truck)
 "Mq" = (
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/trimline/purple/filled/warning,
@@ -902,13 +899,13 @@ az
 az
 VK
 bt
-Lf
+az
 az
 az
 az
 Xf
 aa
-Lf
+az
 "}
 (2,1,1) = {"
 az
@@ -1052,11 +1049,11 @@ az
 az
 VK
 Ng
-Lf
+az
 az
 az
 az
 Xf
 Ng
-Lf
+az
 "}
